@@ -1,0 +1,27 @@
+/* AssignmentForm.css */
+
+.assignment-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: slideIn 1s ease;
+}
+/* ShowtimeAssignmentForm.css */
+.assignment-form select, .assignment-form input[type="date"], .assignment-form input[type="time"], .assignment-form button {
+    margin-bottom: 20px;
+}
+
+.assignment-form button {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.assignment-form button:hover {
+    background-color: #8e44ad;
+}
+
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}

@@ -1,0 +1,75 @@
+/* Checkout.css or your relevant CSS file */
+
+.checkout-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .ticket-details, .payment-details {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .ticket-details{
+    background-color: floralwhite;
+    /* text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: brown;
+    border-radius: 10px;
+    transition: revert; */
+  }
+  
+  h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #2c3e50;
+    line-height: 1.5;
+  }
+  
+  .premium-info {
+    color: #28a745; /* Green color for positive messages */
+  }
+
+.success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 123, 255, 0.9); /* Change as per your color scheme */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.8rem;
+    z-index: 1000; /* Ensure it's above other elements */
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Additional responsive styling if needed */
+@media (max-width: 768px) {
+    .checkout-container {
+      padding: 10px;
+    }
+  }
+  

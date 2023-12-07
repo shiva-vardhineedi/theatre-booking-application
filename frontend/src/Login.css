@@ -1,0 +1,108 @@
+/* Container for the login form */
+.container {
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #1a1a1a; /* Dark background for a cinematic feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+.login-container {
+  max-width: 400px; /* Set a max-width for the login form */
+  width: 90%; /* Full width */
+  background-color: #fff; /* Light background for the form */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: popIn 0.5s ease-in-out both;
+}
+
+/* Form and Input Styling */
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="email"], input[type="password"] {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: #e50914; /* Netflix red for the button */
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #b20710;
+  transform: scale(1.05);
+}
+
+/* Message styling */
+.message {
+  color: #28a745; /* Green for success messages */
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  animation: fadeIn 2s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  70% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.smc-text {
+  position: absolute;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+  animation: moveLeftRight 10s linear infinite;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10vw); /* Move horizontally to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the starting position */
+  }
+}
+
+
+.login-container {
+  position: relative;
+  z-index: 2;
+  /* ... other styles ... */
+}

@@ -1,0 +1,82 @@
+/* MovieSchedule.css */
+
+/* Header styles (you can customize as needed) */
+.header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Back to Home button styles */
+.btn-back {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+h2, h3 {
+    color: wheat;
+}
+
+/* Container styles */
+.container {
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+/* Date selector styles */
+.date-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-selector label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.date-selector input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,14 @@
+/* TheaterCapacityForm.css */
+
+.capacity-form select, .capacity-form input, .capacity-form button {
+    margin-bottom: 20px;
+}
+
+.capacity-form button {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.capacity-form button:hover {
+    background-color: #d35400;
+}

@@ -1,0 +1,88 @@
+/* TicketsAndPoints.css */
+
+/* General container styles */
+#ticketsAndPageOuter {
+  padding: 0;
+  min-width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+/* Reward Points Display */
+.reward-points-display {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Scroll Container */
+.ticket-scroll-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Tickets List */
+.tickets-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  transition: color 0.3s;
+  margin: 0 15px;
+}
+
+.scroll-arrow:hover {
+  color: #007bff;
+}
+
+/* Ticket Item */
+.tickets-list .ticket-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  min-width: 250px;
+}
+
+/* Section Headers */
+.tickets-container h2 {
+  text-align: left;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .tickets-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .tickets-list .ticket-item {
+      min-width: 100%;
+      margin: 10px 0;
+  }
+
+  .ticket-scroll-container {
+      flex-direction: column;
+  }
+
+  .scroll-arrow {
+      display: none;
+  }
+}
+
+.no-tickets-message {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+  padding: 20px;
+}

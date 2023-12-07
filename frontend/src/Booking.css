@@ -1,0 +1,233 @@
+.booking-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #fff;
+  position: relative;
+}
+
+.booking-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.back-button {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+.booking-header h1 {
+  color: #2c3e50;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.screen-indicator {
+  margin: 10px auto;
+  font-size: 14px;
+  padding: 5px 0;
+  width: 80%;
+  background-color: #ddd;
+  color: #555;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.seats-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30px);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+
+.seat-button {
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.seat-button.booked {
+  background-color: #ff6961;
+  cursor: not-allowed;
+}
+
+.seat-button.selected {
+  background-color: #77dd77;
+  color: white;
+}
+
+.seat-button:hover:not(.booked) {
+  transform: scale(1.1);
+}
+
+.booking-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.confirm-booking-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-booking-btn:hover {
+  background-color: #2980b9;
+}
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .booking-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .seats-container {
+    grid-template-columns: repeat(auto-fill, 25px);
+    gap: 8px;
+  }
+
+  .seat-button {
+    padding: 6px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .booking-container {
+    width: 90%;
+  }
+}
+
+.seats-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seat-button:hover:not(.booked):not(.selected) {
+  background-color: #bdc3c7;
+}
+
+.seat-button.booked {
+  background-color: #e74c3c;
+  cursor: not-allowed;
+}
+
+.seat-button.selected {
+  background-color: #2ecc71;
+}
+
+.screen-indicator {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .seat-button {
+    padding: 6px 10px;
+    margin: 0 3px;
+  }
+
+  .seat-row {
+    margin-bottom: 8px;
+  }
+}
+
+.walkway-space {
+  width: 20px; /* Adjust the width of the walkway */
+}
+
+.seat-button {
+  /* ...existing styles... */
+  font-size: 0.75rem; /* Adjust font size to fit the seat number */
+  line-height: normal; /* Adjust line height for better number alignment */
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .seat-button {
+    font-size: 0.7rem; /* Slightly smaller font size for very small screens */
+  }
+  .walkway-space {
+    width: 15px; /* Slightly narrower walkway for small screens */
+  }
+}

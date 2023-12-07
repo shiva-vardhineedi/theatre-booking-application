@@ -1,0 +1,61 @@
+/* MovieForm.css */
+.movie-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.movie-form .input-group {
+    margin-bottom: 15px;
+}
+
+.movie-form input, .movie-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+.movie-form input:focus, .movie-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.movie-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.movie-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.movie-form button:hover {
+    background-color: #27ae60;
+}
+
+.movie-form button:active {
+    transform: scale(0.98);
+}

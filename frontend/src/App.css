@@ -1,0 +1,281 @@
+/* Import Google Font for cinematic feel */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+#root, .fullscreen-bg {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen-bg {
+  background: url('https://i.pinimg.com/originals/31/f1/f1/31f1f1d422af8b929493c4baf2631ac4.gif') no-repeat center center fixed; /* Add your background image here */
+  background-size: cover; /* Ensure it covers the whole screen */
+  position: relative;
+  color: #fff; /* White text for better visibility */
+}
+
+.fullscreen-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+.fullscreen-bg > .container {
+  z-index: 2;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Welcome Text Styling */
+.fullscreen-bg h1 {
+  font-size: 4rem; /* Larger font size for prominence */
+  color: #e50914; /* Vibrant color for attention */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.75); /* Text shadow for depth */
+  margin-bottom: 1rem; /* Adjust bottom margin */
+  animation: fadeIn 2s ease-out;
+}
+
+.fullscreen-bg p {
+  font-size: 1.75rem; /* Slightly larger font size for readability */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 2.5rem;
+  animation: fadeIn 2.5s ease-out;
+}
+
+/* Button Styling */
+.fullscreen-bg button {
+  font-size: 1.3rem; /* Larger font size for readability */
+  padding: 0.8rem 2rem; /* Adjust padding for aesthetics */
+  margin: 0.6rem;
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Specific styles for each button to differentiate them */
+.fullscreen-bg .btn-primary {
+  background-color: #007bff; /* Primary color */
+}
+
+.fullscreen-bg .btn-secondary {
+  background-color: #6c757d; /* Secondary color */
+}
+
+.fullscreen-bg .btn-light {
+  background-color: #f8f9fa; /* Light color */
+  color: #000; /* Dark text for contrast */
+}
+
+/* Hover Effects for Buttons */
+.fullscreen-bg button:hover {
+  cursor: pointer;
+  transform: scale(1.08); /* Slight zoom on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2.5rem;
+  }
+
+  .app-description {
+    font-size: 1.2rem;
+  }
+
+  .app-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fullscreen-bg h1 {
+    font-size: 3rem;
+  }
+
+  .fullscreen-bg p {
+    font-size: 1.4rem;
+  }
+
+  .fullscreen-bg button {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  /* background: url('https://path-to-your-background-image.jpg') no-repeat center center fixed; */
+  background-size: cover;
+}
+
+/* Footer styling */
+/* Footer styling */
+.app-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Change as per your design */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  height: 100px; /* Set a fixed height for your footer */
+  overflow: hidden; /* Hide overflowed content */
+}
+
+.app-footer img {
+  width: 100%; /* Set image width to cover the footer width */
+  height: 100%; /* Set image height to cover the footer height */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000; /* Set the general background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.app-title {
+  font-size: 10rem;
+  color: transparent;
+  background: url('https://i.pinimg.com/originals/7d/a4/b2/7da4b2a2fccdc1c68e60e4a081ee512d.gif') no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* For webkit browsers */
+}
+
+
+.title-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-description {
+  font-size: 1.5rem;
+  color: #fff;
+  position: relative;
+  animation: sparkle 1.5s infinite alternate;
+  opacity: 0.8;
+}
+
+@keyframes sparkle {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  100% {
+    color: #ffe000;
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff,  0 0 30px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.burst-animation {
+  animation: burst 0.5s forwards;
+}
+
+
+
+

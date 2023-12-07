@@ -1,0 +1,14 @@
+/* DiscountForm.css */
+
+.configure-discounts .input-group input {
+    margin-bottom: 20px;
+}
+
+.configure-discounts button {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.configure-discounts button:hover {
+    background-color: #16a085;
+}

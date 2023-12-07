@@ -1,0 +1,102 @@
+/* Landing Page Styles */
+.landing-container {
+  /* padding: 2rem; */
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: #1c1e21; /* Dark background */
+  color: #ffffff; 
+}
+
+.landing-header {
+  padding: 1rem 0;
+  background-color: #2c3e50;
+  color: #fff;
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+h1 {
+  /* color: #e50914; Bright color for the main title */
+  margin-bottom: 1rem;
+}
+
+/* Breadcrumb / Back Button */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  color: #adb5bd; /* Soft color for breadcrumb text */
+}
+
+.breadcrumb-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar {
+  padding-bottom: 20px;
+}
+
+.breadcrumb-item:hover {
+  color: #ffffff; /* Highlight on hover */
+}
+
+/* Content Container */
+.content-container {
+  padding: 1rem;
+  background-color: #343a40;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #495057;
+  color: white;
+}
+
+/* Button Styles */
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+  background-color: #007bff; /* Primary blue */
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 1rem;
+  }
+}

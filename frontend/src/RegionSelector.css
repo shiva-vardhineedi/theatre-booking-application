@@ -1,0 +1,35 @@
+.region-selector {
+    text-align: center;
+    padding: 20px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .region-selector h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #2c3e50;
+  }
+  
+  .region-selector button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .region-selector button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  

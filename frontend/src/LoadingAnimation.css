@@ -1,0 +1,52 @@
+/* Import a unique Google Font, for example, 'Bebas Neue' */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splitAndZoomOut 3s ease-in-out forwards;
+}
+
+.letter {
+  font-family: 'Bebas Neue', sans-serif; /* Apply the unique font */
+  font-size: 5rem;
+  color: #e50914;
+  margin: 0 5px;
+  opacity: 1;
+  transform: scale(1);
+  animation: splitLetter 3s ease-in-out forwards; /* Individual animation for each letter */
+}
+
+@keyframes splitAndZoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5); /* Scale up the whole word */
+    opacity: 0;
+  }
+}
+
+@keyframes splitLetter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--spread) * 1rem)); /* Use a CSS variable for spread */
+    opacity: 0;
+  }
+}

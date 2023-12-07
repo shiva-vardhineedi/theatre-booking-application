@@ -1,0 +1,52 @@
+/* TicketItem.css */
+
+.ticket-item {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticket-item h3 {
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-item p {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-item button {
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ticket-item button:hover {
+  background-color: #c0392b;
+}
+
+.ticket-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animated.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}

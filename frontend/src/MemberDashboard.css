@@ -1,0 +1,45 @@
+/* Main container for the dashboard */
+.member-dashboard {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+/* Headers for each section */
+.member-dashboard h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Each section's container */
+.member-dashboard .section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Striped rows for better readability */
+.member-dashboard .section .row {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.member-dashboard .section .row:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Last row should not have a bottom border */
+.member-dashboard .section .row:last-child {
+    border-bottom: none;
+}
+
+/* Display for reward points */
+.member-dashboard .rewards {
+    font-size: 20px;
+    color: #007BFF;  /* Highlight the reward points */
+}
